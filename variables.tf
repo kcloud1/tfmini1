@@ -1,3 +1,3 @@
-variable "username" {
+variable "username2" {
 	default = "amit"
 }
