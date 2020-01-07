@@ -28,12 +28,12 @@ output "username" {
 
 data "terraform_remote_state" "dev" {
   backend = "remote"
-  workspace = "tfmini1"
+  workspace = "dev"
   config = {
     organization = "amitk"
     workspaces = {
       # name = "minimum-dev"
-      prefix = "tf"
+      prefix = "minimum-"
     }
   }
 }
