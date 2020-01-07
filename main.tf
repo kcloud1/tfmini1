@@ -1,4 +1,5 @@
 variable "username" {
+  default = "amitkarpe@gmail.com"
 }
 
 provider "random" { # an empty for destroying old resources
@@ -27,12 +28,12 @@ output "username" {
 
 data "terraform_remote_state" "dev" {
   backend = "remote"
-  workspace = "dev"
+  workspace = "tfmini1"
   config = {
-    organization = "nicktech"
+    organization = "amitk"
     workspaces = {
       # name = "minimum-dev"
-      prefix = "minimum-"
+      prefix = "tf"
     }
   }
 }
